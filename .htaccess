@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /git/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ /git/public/index.php [L,QSA]
